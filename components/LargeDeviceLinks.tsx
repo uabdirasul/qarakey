@@ -17,7 +17,7 @@ const LargeDeviceLinks = () => {
             pathname === link.href
               ? "bg-gray-500 text-white"
               : "text-gray-300 hover:bg-white hover:text-black"
-          } px-2 py-1 text-sm font-medium rounded-md text-gray-300 hover:bg-white hover:text-black`}
+          } px-2 py-1 text-sm font-bold rounded-md text-gray-300 hover:bg-white hover:text-black`}
         >
           {link.name}
         </Link>
