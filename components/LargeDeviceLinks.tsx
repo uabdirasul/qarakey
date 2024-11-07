@@ -10,7 +10,10 @@ const LargeDeviceLinks = () => {
   return (
     <div className="flex items-center space-x-4">
       {LINKS.map((link) => (
-        <span key={link.name} className="border-r-2 pr-4 last:border-none">
+        <span
+          key={link.name}
+          className="border-r-2 pr-4 last:pr-0 last:border-none"
+        >
           <Link
             href={link.href}
             className={`${

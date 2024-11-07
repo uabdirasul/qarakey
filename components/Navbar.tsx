@@ -59,17 +59,17 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className="flex flex-1 items-center justify-center sm:items-center sm:justify-start">
+          <div className="flex flex-1 items-center justify-center sm:items-center custom-md:justify-start">
             <div className="flex shrink-0 items-center bg-black py-2.5 px-2 rounded-md">
               <Link href="/">
                 <span>KK Keyboards</span>
               </Link>
             </div>
-            <div className="hidden sm:ml-6 sm:block bg-black py-2.5 px-2 rounded-md w-2/3">
+            <div className="hidden sm:ml-6 sm:block bg-black py-2.5 px-2 rounded-md">
               <LargeDeviceLinks />
             </div>
           </div>
-          <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div className="absolute inset-y-0 right-0 items-center custom-md:flex hidden">
             <button
               type="button"
               className="relative h-11 rounded-md bg-blue-600 py-2 px-3 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
