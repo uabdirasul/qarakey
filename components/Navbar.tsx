@@ -65,7 +65,7 @@ const Navbar = () => {
                 <span>KK Keyboards</span>
               </Link>
             </div>
-            <div className="hidden sm:ml-6 sm:block bg-black py-2 px-2 rounded-md w-2/3">
+            <div className="hidden sm:ml-6 sm:block bg-black py-2.5 px-2 rounded-md w-2/3">
               <LargeDeviceLinks />
             </div>
           </div>
@@ -82,7 +82,7 @@ const Navbar = () => {
       </div>
 
       {open && (
-        <div className="sm:hidden " id="mobile-menu">
+        <div className="sm:hidden flex justify-center">
           <SmallDeviceLinks />
         </div>
       )}

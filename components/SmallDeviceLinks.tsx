@@ -8,7 +8,7 @@ const SmallDeviceLinks = () => {
   const pathname = usePathname();
 
   return (
-    <div className="space-y-1 px-1 pb-3 pt-2 absolute top-13 left-0 w-full bg-black/40 backdrop-blur-lg rounded-lg">
+    <div className="space-y-1 px-1 pb-3 pt-2 absolute top-13 w-[97%] bg-black/40 backdrop-blur-lg rounded-lg">
       {LINKS.map((link) => (
         <Link
           key={link.name}
