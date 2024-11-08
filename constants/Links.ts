@@ -1,11 +1,11 @@
 export const LINKS = [
   {
     name: "Ornatıw",
-    href: "/use"
+    href: "/install"
   },
   {
     name: "Paydalanıw",
-    href: "/install"
+    href: "/use"
   },
   {
     name: "Óshiriw",

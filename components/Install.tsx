@@ -1,8 +1,13 @@
+import MdxLayout from "@/components/MdxLayout";
+import InstallPage from "@/markdown/InstallPage.mdx";
+import DownloadForWindows from "./DownloadForWindows";
+
 const Install = () => {
   return (
-    <div id="install" className="h-[40rem] bg-blue-800">
-      How to install
-    </div>
+    <MdxLayout>
+      <DownloadForWindows />
+      <InstallPage />
+    </MdxLayout>
   );
 };
 
