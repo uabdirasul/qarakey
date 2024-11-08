@@ -6,10 +6,10 @@ import LargeDeviceLinks from "./LargeDeviceLinks";
 import SmallDeviceLinks from "./SmallDeviceLinks";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
-    setOpen(!open);
+    setIsOpen(!isOpen);
   };
   return (
     <nav className="font-bold">
@@ -81,9 +81,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {open && (
+      {isOpen && (
         <div className="sm:hidden flex justify-center">
-          <SmallDeviceLinks />
+          <SmallDeviceLinks clickHandler={handleToggle} />
         </div>
       )}
     </nav>

@@ -4,13 +4,14 @@ import { LINKS } from "@/constants/Links";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const SmallDeviceLinks = () => {
+const SmallDeviceLinks = ({ clickHandler }: { clickHandler: () => void }) => {
   const pathname = usePathname();
 
   return (
-    <div className="space-y-1 px-1 pb-3 pt-2 absolute top-13 w-[97%] bg-black/40 backdrop-blur-lg rounded-lg">
+    <div className="z-10 space-y-1 px-1 pb-3 pt-2 absolute top-13 w-[97%] bg-black/40 backdrop-blur-lg rounded-lg transition-transform duration-300 ease-in-out">
       {LINKS.map((link) => (
         <Link
+          onClick={clickHandler}
           key={link.name}
           href={link.href}
           className={`${
