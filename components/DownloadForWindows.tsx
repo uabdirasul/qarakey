@@ -31,15 +31,6 @@ const DownloadForWindows = () => {
             <button className="bg-blue-600 p-2 rounded-md">Download</button>
           </p>
         </div>
-        <div className="bg-white/10 backdrop-blur-lg border border-white/30 px-14 py-4 rounded-md text-center m-2">
-          <p className="bg-blue-500 px-3 py-1 rounded-md text-center">
-            x86 bit
-          </p>
-          <p className="mt-6">
-            MSI download —{" "}
-            <button className="bg-blue-600 p-2 rounded-md">Download</button>
-          </p>
-        </div>
       </div>
     </div>
   );
