@@ -1,4 +1,7 @@
 import Image from "next/image";
+import ThisPCImage from "/public/InstallingImages/this-pc.jpg";
+import PropertiesImage from "/public/InstallingImages/properties.jpg";
+import x64Image from "/public/InstallingImages/x64.jpg";
 
 Bul klaviaturanı ornatıwdan aldın kompyuterińiz qanday ekenligin bilip alıwıńız kerek.
 
@@ -7,15 +10,29 @@ Házirshe bul klaviatura tek Windows kompyuterleri ushın. Eger sizde Windows bo
 1. Siziń kompyuterińiz x32 **bit**lik pe yáki x64 **bit**lik pe? Onı bilip alıw ushın:
 
    - **Проводник** dástúrin ashıń. Onı `Win + E` túymeleri arqalı tezirek ashıwıńız múmkin.
-   - Payda bolǵan ayna sol dástúrge tiyisli, ol jerden **Этот компьютер** di tabıń. Ol shep tárepte dástúrdiń orta bólimlerde jaylasqan.
-   - **Этот компьютер** ústine **мышка**nı alıp barıp, onıń oń tárepin basıń. Payda bolǵan aynadan **Свойства**nı saylań.
-   - Tómendegidey ayna shıǵadı. Ol jerde System Typeti tawıp 64 yáki 32 bit ekenligin anıqlawıńız múmkin:
-
+   - Payda bolǵan ayna sol dástúrge tiyisli, ol jerden **Этот компьютер** di tabıń. Ol shep tárepte dástúrdiń orta bólimlerde jaylasqan:
      <Image
-       src="https://i.ibb.co/7pMdHLw/Screenshot-from-2024-11-08-19-23-08.png"
-       alt="My Image"
-       width={800}
+       src={ThisPCImage}
+       alt="This PC image"
+       width={1000}
        height={600}
+       className="m-2"
+     />
+   - **Этот компьютер** ústine **мышка**nı alıp barıp, onıń oń tárepin basıń. Payda bolǵan aynadan **Свойства**nı saylań:
+     <Image
+       src={PropertiesImage}
+       alt="Properties image"
+       width={1000}
+       height={600}
+       className="m-2"
+     />
+   - Tómendegidey ayna shıǵadı. Ol jerde System Typeti tawıp 64 yáki 32 bit ekenligin anıqlawıńız múmkin:
+     <Image
+       src={x64Image}
+       alt="x64 Image"
+       width={1000}
+       height={600}
+       className="m-2"
      />
 
 2. Neshe **bit** ekenligin bilip bolǵannan keyin, usı bette, joqarıdaǵı x32, x64, x86 lardan ózińizge keregin saylap, júklep alıwıńız múmkin.

@@ -6,7 +6,12 @@ const nextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
 
   images: {
-    domains: ["i.ibb.co"] // Allow images from i.ibb.co domain
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.ibb.co"
+      }
+    ] // Allow images from i.ibb.co domain
   }
   // Optionally, add any other Next.js config below
 };
