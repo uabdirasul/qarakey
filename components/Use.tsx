@@ -1,8 +1,11 @@
+import MdxLayout from "@/components/MdxLayout";
+import UsePage from "@/markdown/UsePage.mdx";
+
 const Use = () => {
   return (
-    <div id="use" className="h-[40rem] bg-yellow-800">
-      How to use
-    </div>
+    <MdxLayout>
+      <UsePage />
+    </MdxLayout>
   );
 };
 
