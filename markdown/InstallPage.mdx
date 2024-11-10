@@ -1,40 +1,60 @@
 import Image from "next/image";
-import ThisPCImage from "/public/InstallingImages/this-pc.jpg";
-import PropertiesImage from "/public/InstallingImages/properties.jpg";
-import x64Image from "/public/InstallingImages/x64.jpg";
+import FileInDownloads from "../public/InstallingImages/file-in-downloads.jpg";
+import ExtractAll from "../public/InstallingImages/extract-all-file.jpg";
+import Extract from "../public/InstallingImages/extract.jpg";
+import Extracted from "../public/InstallingImages/extracted.jpg";
+import SetupFile from "../public/InstallingImages/setup-file.jpg";
+import InstallationComplete from "../public/InstallingImages/installation-complete.jpg";
+import CheckingLanguageExist from "../public/InstallingImages/languages-showing.jpg";
 
 Bul klaviaturanı ornatıwdan aldın kompyuterińiz qanday ekenligin bilip alıwıńız kerek.
 
 Házirshe bul klaviatura tek Windows kompyuterleri ushın. Eger sizde Windows bolsa tómendegi basqıshlar arqalı onı júklep alıwıńız múmkin:
 
-1. Siziń kompyuterińiz x32 **bit**lik pe yáki x64 **bit**lik pe? Onı bilip alıw ushın:
+1. Joqarıdaǵı **Júklep alıw** túymesi arqalı kerek bolǵan fayldı júklep alıń
+2. Fayl júklep alınǵannan keyin ol turǵan papkanı ashıń. Ádette, ol **Загрузки** papkasında jaylasqan boladı:
 
-   - **Проводник** dástúrin ashıń. Onı `Win + E` túymeleri arqalı tezirek ashıwıńız múmkin.
-   - Payda bolǵan ayna sol dástúrge tiyisli, ol jerden **Этот компьютер** di tabıń. Ol shep tárepte dástúrdiń orta bólimlerde jaylasqan:
-     <Image
-       src={ThisPCImage}
-       alt="This PC image"
-       width={1000}
-       height={600}
-       className="m-2"
-     />
-   - **Этот компьютер** ústine **мышка**nı alıp barıp, onıń oń tárepin basıń. Payda bolǵan aynadan **Свойства**nı saylań:
-     <Image
-       src={PropertiesImage}
-       alt="Properties image"
-       width={1000}
-       height={600}
-       className="m-2"
-     />
-   - Tómendegidey ayna shıǵadı. Ol jerde System Typeti tawıp 64 yáki 32 bit ekenligin anıqlawıńız múmkin:
-     <Image
-       src={x64Image}
-       alt="x64 Image"
-       width={1000}
-       height={600}
-       className="m-2"
-     />
+   <Image
+     src={FileInDownloads}
+     alt="File in downloads"
+     width={1000}
+     height={800}
+   />
 
-2. Neshe **bit** ekenligin bilip bolǵannan keyin, usı bette, joqarıdaǵı x32, x64, x86 lardan ózińizge keregin saylap, júklep alıwıńız múmkin.
-3. Júklep alınǵan fayldı ashın hám **Next** túymesin izbe-iz basıń. Nátiyjede klaviatura kompyuterińizge ornatıladı.
-4. Paydalanıwdı baslaw ushın usı siltemege basıń: [`/use`](/use)
+3. Júklengen zip fayl ústine **мышка** alıp barıp, onıń oń tárepin basıń. Hám shıqqan aynadan **Извлечь все...** túymesin basıń:
+
+   <Image src={ExtractAll} alt="Extract all" width={1000} height={800} />
+
+4. Payda bolǵan aynadan **Извлечь** túymesin basıń:
+
+   <Image src={Extract} alt="Extract" width={1000} height={800} />
+
+5. Túyme basılıp, azǵana waqıt ótkennen soń avtomatik túrde zip fayldıń atınday papka ashılıwı kerek. Eger ashılmasa, sol jerden ózińiz saylap ashıp alsańız boladı:
+
+   <Image src={Extracted} alt="Extracted" width={1000} height={800} />
+   Контроль учетных записей
+
+6. Sol papkanı ashın hám kórinip turǵan fayllar ishinen **setup** atlı fayldı tabıń, hám onı ashıń:
+
+   <Image src={SetupFile} alt="Setup file" width={1000} height={800} />
+
+7. **Контроль учетных записей** degen ayna ashıladı, ol jerde ápiwayı ǵana **Да**nı saylań.
+8. Eger ornatıw sátli tawsılǵan bolsa tómendegidey ayna shıgıwı kerek:
+
+   <Image
+     src={InstallationComplete}
+     alt="Installation complete"
+     width={1000}
+     height={800}
+   />
+
+9. Jáne bir márte tekseriw ushın, ekranıńızdıń oń tárepki, tómen bóliminen klaviatura tilin ózgertiw bólimin ashıń. Ol jerde tómendegidey nárseler kóriniwi kerek:
+
+   <Image
+     src={CheckingLanguageExist}
+     alt="Checking language exist"
+     width={1000}
+     height={800}
+   />
+
+10. Klaviatura ornatıldı, endi paydalanıwdı baslaw ushın usı siltemege basıń: [`/use`](/use)

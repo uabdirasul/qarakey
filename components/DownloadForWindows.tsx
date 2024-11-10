@@ -15,20 +15,11 @@ const DownloadForWindows = () => {
       <div className="p-5 flex justify-around w-full flex-col md:flex-row">
         <div className="bg-white/10 backdrop-blur-lg border border-white/30 px-14 py-4 rounded-md text-center m-2">
           <p className="bg-blue-500 px-3 py-1 rounded-md text-center">
-            x32 bit
+            x32 | x64 bit
           </p>
           <p className="mt-6">
-            MSI download —{" "}
-            <button className="bg-blue-600 p-2 rounded-md">Download</button>
-          </p>
-        </div>
-        <div className="bg-white/10 backdrop-blur-lg border border-white/30 px-14 py-4 rounded-md text-center m-2">
-          <p className="bg-blue-500 px-3 py-1 rounded-md text-center">
-            x64 bit
-          </p>
-          <p className="mt-6">
-            MSI download —{" "}
-            <button className="bg-blue-600 p-2 rounded-md">Download</button>
+            <b>.zip</b> file —{" "}
+            <button className="bg-blue-600 p-2 rounded-md">Júklep alıw</button>
           </p>
         </div>
       </div>
