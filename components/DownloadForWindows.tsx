@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const DownloadForWindows = () => {
+  const DOWNLOAD_ID = process.env.NEXT_PUBLIC_DOWNLOAD_ID;
   const [loading, setLoading] = useState(false);
 
   const handleDownloadClick = () => {
@@ -31,7 +32,7 @@ const DownloadForWindows = () => {
           <p className="mt-6">
             <b>.zip</b> file —{" "}
             <Link
-              href="https://drive.google.com/uc?export=download&id=1EeJKJiq0fh7X0GqXhbFbSx2tgeOXjkp8"
+              href={`https://drive.google.com/uc?export=download&id=${DOWNLOAD_ID}`}
               passHref
               legacyBehavior
             >
