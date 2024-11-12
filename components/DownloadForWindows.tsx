@@ -1,6 +1,17 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 const DownloadForWindows = () => {
+  const [loading, setLoading] = useState(false);
+
+  const handleDownloadClick = () => {
+    setLoading(true);
+    setTimeout(() => setLoading(false), 5000); // e.g., reset after 5 seconds
+  };
+
   return (
     <div className="pt-6 flex flex-col items-center justify-center">
       <Image
@@ -19,7 +30,21 @@ const DownloadForWindows = () => {
           </p>
           <p className="mt-6">
             <b>.zip</b> file —{" "}
-            <button className="bg-blue-600 p-2 rounded-md">Júklep alıw</button>
+            <Link
+              href="https://drive.google.com/uc?export=download&id=1EeJKJiq0fh7X0GqXhbFbSx2tgeOXjkp8"
+              passHref
+              legacyBehavior
+            >
+              <button
+                onClick={handleDownloadClick}
+                disabled={loading}
+                className={`p-2 rounded-md ${
+                  loading ? "bg-gray-400 cursor-not-allowed" : "bg-blue-600"
+                }`}
+              >
+                {loading ? "Processte..." : "Júklep alıw"}
+              </button>
+            </Link>
           </p>
         </div>
       </div>

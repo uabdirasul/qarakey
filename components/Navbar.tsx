@@ -70,13 +70,13 @@ const Navbar = () => {
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 items-center custom-md:flex hidden">
-            <button
-              type="button"
-              className="relative h-11 rounded-md bg-blue-600 py-2 px-3 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+            <Link
+              href={"/downloads"}
+              className="relative h-11 rounded-md bg-blue-600 py-2 px-3 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 flex items-center"
             >
               <span className="absolute -inset-1.5"></span>
-              <span>Download x64 (Windows)</span>
-            </button>
+              <span>Júklep alıw (Windows)</span>
+            </Link>
           </div>
         </div>
       </div>
