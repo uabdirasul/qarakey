@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import posthog from "posthog-js";
 import { useState } from "react";
 
 const DownloadForWindows = () => {
@@ -9,11 +10,9 @@ const DownloadForWindows = () => {
   const [loading, setLoading] = useState(false);
 
   const trackDownload = (fileName: string) => {
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "download", {
-        event_category: "file_download",
-        event_label: fileName,
-        value: 1
+    if (typeof window !== "undefined" && posthog) {
+      posthog.capture("file_downloaded", {
+        file_name: fileName // You can add more properties here if needed
       });
     }
   };
