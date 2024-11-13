@@ -8,9 +8,20 @@ const DownloadForWindows = () => {
   const DOWNLOAD_ID = process.env.NEXT_PUBLIC_DOWNLOAD_ID;
   const [loading, setLoading] = useState(false);
 
+  const trackDownload = (fileName: string) => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "download", {
+        event_category: "file_download",
+        event_label: fileName,
+        value: 1
+      });
+    }
+  };
+
   const handleDownloadClick = () => {
     setLoading(true);
     setTimeout(() => setLoading(false), 5000); // e.g., reset after 5 seconds
+    trackDownload("QQ.zip");
   };
 
   return (
