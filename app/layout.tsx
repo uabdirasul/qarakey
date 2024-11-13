@@ -32,7 +32,8 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-                cookie_domain: "kk-keyboards.vercel.app"
+                cookie_domain: "kk-keyboards.vercel.app",
+                cookie_flags: 'SameSite=None;Secure',
               });
             `
           }}
