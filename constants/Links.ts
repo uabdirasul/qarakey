@@ -8,11 +8,11 @@ export const LINKS = [
     href: "/use"
   },
   {
-    name: "Óshiriw",
-    href: "/delete"
-  },
-  {
     name: "Usınıs",
     href: "/suggestion"
+  },
+  {
+    name: "FAQ",
+    href: "/faq"
   }
 ];
