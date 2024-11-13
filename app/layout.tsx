@@ -34,6 +34,7 @@ export default function RootLayout({
               gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
                 cookie_domain: "kk-keyboards.vercel.app",
                 cookie_flags: 'SameSite=None;Secure',
+                cookie_expires: 63072000, // 2 years
               });
             `
           }}
