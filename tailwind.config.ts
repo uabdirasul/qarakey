@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        "custom-md": "894px"
+        "custom-md": "760px"
       },
       colors: {
         background: "var(--background)",

@@ -13,9 +13,9 @@ const Navbar = () => {
   };
   return (
     <nav className="font-bold">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-8">
         <div className="relative flex h-16 items-center justify-center">
-          <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+          <div className="absolute inset-y-0 right-0 flex items-center custom-md:hidden">
             <button
               type="button"
               onClick={handleToggle}
@@ -59,23 +59,23 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className="flex flex-1 items-center justify-center sm:items-center custom-md:justify-start">
+          <div className="flex flex-1 items-center">
             <div className="flex shrink-0 items-center bg-black py-2.5 px-2 rounded-md">
               <Link href="/">
                 <span>KK Keyboards</span>
               </Link>
             </div>
-            <div className="hidden sm:ml-6 sm:block bg-black py-2.5 px-2 rounded-md">
+            <div className="hidden custom-md:block sm:ml-6 bg-black py-2.5 px-2 rounded-md">
               <LargeDeviceLinks />
             </div>
           </div>
-          <div className="absolute inset-y-0 right-0 items-center custom-md:flex hidden">
+          <div className="absolute inset-y-0 right-0 items-center flex mx-12 custom-md:m-0">
             <Link
               href={"/downloads"}
-              className="relative h-11 rounded-md bg-blue-600 py-2 px-3 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 flex items-center"
+              className="relative h-11 rounded-md bg-blue-600 px-2 text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 flex items-center"
             >
               <span className="absolute -inset-1.5"></span>
-              <span>Júklep alıw (Windows)</span>
+              <span>Júklemeler</span>
             </Link>
           </div>
         </div>
