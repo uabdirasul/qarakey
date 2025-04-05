@@ -2,6 +2,7 @@
 
 import "@/constants/KeyboardAssets";
 import { KEYBOARD_ASSETS } from "@/constants/KeyboardAssets";
+import { SoftwareType } from "@/types/software_type";
 import { Download, ExternalLink, Info, ShoppingBag } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -22,7 +23,7 @@ export default function Downloads() {
     }
   };
 
-  const getButtonText = (software: any) => {
+  const getButtonText = (software: SoftwareType) => {
     if (software.type === "download") {
       return software.charset
         ? `Júklep alıw (${

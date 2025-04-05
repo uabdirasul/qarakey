@@ -1,4 +1,6 @@
-export const KEYBOARD_ASSETS = [
+import { Asset } from "@/types/software_type";
+
+export const KEYBOARD_ASSETS: Asset[] = [
   {
     name: "Windows OS Keyboard",
     softwares: [
