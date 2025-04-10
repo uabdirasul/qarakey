@@ -4,8 +4,13 @@ export type DownloadSoftware = {
   url: string;
 };
 
-export type InstructionSoftware = {
-  type: "instructions";
+export type InstallInstructions = {
+  type: "install_instructions";
+  url: string;
+};
+
+export type UseInstructions = {
+  type: "use_instructions";
   url: string;
 };
 
@@ -18,7 +23,8 @@ export type StoreSoftware = {
 
 export type SoftwareType =
   | DownloadSoftware
-  | InstructionSoftware
+  | InstallInstructions
+  | UseInstructions
   | StoreSoftware;
 
 export type Asset = {

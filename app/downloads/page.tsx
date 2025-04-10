@@ -14,7 +14,8 @@ export default function Downloads() {
     switch (type) {
       case "download":
         return <Download className="w-5 h-5" />;
-      case "instructions":
+      case "install_instructions":
+      case "use_instructions":
         return <Info className="w-5 h-5" />;
       case "store":
         return <ShoppingBag className="w-5 h-5" />;
@@ -30,8 +31,10 @@ export default function Downloads() {
             software.charset.charAt(0).toUpperCase() + software.charset.slice(1)
           })`
         : "Júklep alıw";
-    } else if (software.type === "instructions") {
+    } else if (software.type === "install_instructions") {
       return "Ornatıw instrukciyası";
+    } else if (software.type === "use_instructions") {
+      return "Paydalanıw instrukciyası";
     } else if (software.type === "store") {
       return (
         software.name ||

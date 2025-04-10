@@ -13,6 +13,14 @@ export const KEYBOARD_ASSETS: Asset[] = [
         type: "download",
         charset: "cyrillic",
         url: "/download_assets/windows/qq-cyr.zip"
+      },
+      {
+        type: "install_instructions",
+        url: "/install/windows"
+      },
+      {
+        type: "use_instructions",
+        url: "/use/windows"
       }
     ],
     original_source: "https://jiemurat.github.io/QQ-kbd/"
@@ -21,8 +29,22 @@ export const KEYBOARD_ASSETS: Asset[] = [
     name: "Linux OS Keyboard",
     softwares: [
       {
-        type: "instructions",
-        url: "/install"
+        type: "download",
+        charset: "latin",
+        url: "/download_assets/linux/kaa-latin"
+      },
+      {
+        type: "download",
+        charset: "cyrillic",
+        url: "/download_assets/linux/kaa"
+      },
+      {
+        type: "install_instructions",
+        url: "/install/linux"
+      },
+      {
+        type: "use_instructions",
+        url: "/use/linux"
       }
     ],
     original_source: "https://github.com/jiemurat/kaa-kbd-layout"
@@ -33,6 +55,14 @@ export const KEYBOARD_ASSETS: Asset[] = [
       {
         type: "download",
         url: "/download_assets/mac/qqkeyboard-mac.zip"
+      },
+      {
+        type: "install_instructions",
+        url: "/install/mac"
+      },
+      {
+        type: "use_instructions",
+        url: "/use/linux"
       }
     ],
     original_source: "https://github.com/shagalalab/qqkeyboard-mac/"
