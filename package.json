@@ -16,7 +16,6 @@
     "image-size": "^1.1.1",
     "lucide-react": "^0.487.0",
     "next": "15.0.2",
-    "posthog-js": "^1.184.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },

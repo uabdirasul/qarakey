@@ -4,15 +4,15 @@ import MacUse from "@/markdown/MacUse.mdx";
 import WindowsUse from "@/markdown/WindowsUse.mdx";
 import { notFound } from "next/navigation";
 
-interface Params {
-  params: {
+interface PageParams {
+  params: Promise<{
     os: string;
-  };
+  }>;
 }
 
 const validOs = ["windows", "linux", "mac"];
 
-const page = async ({ params }: Params) => {
+const page = async ({ params }: PageParams) => {
   const { os } = await params;
 
   if (!validOs.includes(os)) {

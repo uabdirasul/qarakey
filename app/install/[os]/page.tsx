@@ -4,15 +4,16 @@ import MacInstall from "@/markdown/MacInstall.mdx";
 import WindowsInstall from "@/markdown/WindowsInstall.mdx";
 import { notFound } from "next/navigation";
 
-interface Params {
-  params: {
+// Define the type according to the error message structure
+interface PageParams {
+  params: Promise<{
     os: string;
-  };
+  }>;
 }
 
 const validOs = ["windows", "linux", "mac"];
 
-const page = async ({ params }: Params) => {
+const Page = async ({ params }: PageParams) => {
   const { os } = await params;
 
   if (!validOs.includes(os)) {
@@ -34,4 +35,4 @@ const page = async ({ params }: Params) => {
   );
 };
 
-export default page;
+export default Page;
