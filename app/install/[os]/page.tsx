@@ -2,7 +2,6 @@ import MdxLayout from "@/components/MdxLayout";
 import LinuxInstall from "@/markdown/LinuxInstall.mdx";
 import MacInstall from "@/markdown/MacInstall.mdx";
 import WindowsInstall from "@/markdown/WindowsInstall.mdx";
-import { notFound } from "next/navigation";
 
 // Define the type according to the error message structure
 interface PageParams {
@@ -11,14 +10,18 @@ interface PageParams {
   }>;
 }
 
-const validOs = ["windows", "linux", "mac"];
+const OS = ["windows", "linux", "mac"];
+
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  return OS.map((os) => ({
+    os: os
+  }));
+}
 
 const Page = async ({ params }: PageParams) => {
   const { os } = await params;
-
-  if (!validOs.includes(os)) {
-    notFound();
-  }
 
   const components = {
     windows: WindowsInstall,

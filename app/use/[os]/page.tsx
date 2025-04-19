@@ -2,7 +2,6 @@ import MdxLayout from "@/components/MdxLayout";
 import LinuxUse from "@/markdown/LinuxUse.mdx";
 import MacUse from "@/markdown/MacUse.mdx";
 import WindowsUse from "@/markdown/WindowsUse.mdx";
-import { notFound } from "next/navigation";
 
 interface PageParams {
   params: Promise<{
@@ -10,14 +9,18 @@ interface PageParams {
   }>;
 }
 
-const validOs = ["windows", "linux", "mac"];
+export const dynamicParams = false;
+
+const OS = ["windows", "linux", "mac"];
+
+export async function generateStaticParams() {
+  return OS.map((os) => ({
+    os: os
+  }));
+}
 
 const page = async ({ params }: PageParams) => {
   const { os } = await params;
-
-  if (!validOs.includes(os)) {
-    notFound();
-  }
 
   const components = {
     windows: WindowsUse,
