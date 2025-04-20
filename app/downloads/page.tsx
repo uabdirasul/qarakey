@@ -50,7 +50,9 @@ export default function Downloads() {
     <section className="sm:w-[90%] w-[97%] mt-4 container mx-auto bg-white/20 bg-gradient-to-tr from-gray-800/50 to-gray-800/50 border border-white/30 rounded-lg">
       <div className="container mx-auto px-4 py-8">
         <div className="bg-gray-700/80 rounded-lg p-6 text-white mb-8">
-          <h1 className="text-2xl font-bold mb-4">Klaviaturalar</h1>
+          <h1 className="text-2xl font-bold mb-4">
+            Qaraqalpaq tili klaviatura maketleri:
+          </h1>
 
           {/* OS Tabs */}
           <div className="flex justify-center flex-wrap gap-2 mb-6">

@@ -33,6 +33,10 @@ const Page = async ({ params }: PageParams) => {
 
   return (
     <MdxLayout>
+      <h1 className="text-[2rem] font-bold my-[1rem]">
+        Qaraqalpaq tili klaviatura maketin &quot;{os.toUpperCase()}&quot;
+        platformasında ornatıw
+      </h1>
       <Component />
     </MdxLayout>
   );

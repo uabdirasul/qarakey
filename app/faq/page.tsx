@@ -1,4 +1,4 @@
-import FAQ from "@/components/Delete";
+import FAQ from "@/components/FAQ";
 
 const page = () => {
   return <FAQ />;
