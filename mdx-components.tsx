@@ -4,7 +4,14 @@ import Image, { ImageProps } from "next/image";
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     h1: ({ children }) => (
-      <h1 style={{ fontSize: "2rem", fontWeight: "bold", margin: "1rem 0" }}>
+      <h1
+        style={{
+          fontSize: "2rem",
+          fontWeight: "bold",
+          margin: "1rem 0",
+          lineHeight: "2rem"
+        }}
+      >
         {children}
       </h1>
     ),

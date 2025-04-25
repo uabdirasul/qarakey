@@ -33,7 +33,7 @@ const Page = async ({ params }: PageParams) => {
 
   return (
     <MdxLayout>
-      <h1 className="text-[2rem] font-bold my-[1rem]">
+      <h1 className="text-[2rem] font-bold my-[1rem] leading-8">
         Qaraqalpaq tili klaviatura maketin &quot;{os.toUpperCase()}&quot;
         platformasında ornatıw
       </h1>

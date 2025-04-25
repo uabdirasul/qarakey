@@ -19,7 +19,7 @@ const FAQ = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 text-center">
-      <h1 className="text-3xl font-semibold mb-8 text-white bg-gray-500 inline-block rounded-lg p-2">
+      <h1 className="text-3xl font-semibold mb-8 text-white bg-gray-500 inline-block rounded-lg p-2 leading-8">
         F.A.Q. — Tez soralatuǵın sórawlar
       </h1>
       <div className="space-y-4">
