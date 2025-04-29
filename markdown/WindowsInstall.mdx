@@ -1,60 +1,61 @@
 import Image from "next/image";
-import ExtractAll from "../public/InstallingImages/extract-all-file.jpg";
-import Extract from "../public/InstallingImages/extract.jpg";
-import Extracted from "../public/InstallingImages/extracted.jpg";
-import FileInDownloads from "../public/InstallingImages/file-in-downloads.jpg";
-import InstallationComplete from "../public/InstallingImages/installation-complete.jpg";
-import CheckingLanguageExist from "../public/InstallingImages/languages-showing.jpg";
-import SetupFile from "../public/InstallingImages/setup-file.jpg";
-
-Bul klaviaturanı ornatıwdan aldın kompyuterińiz qanday ekenligin bilip alıwıńız kerek.
-
-Házirshe bul klaviatura tek Windows kompyuterleri ushın. Eger sizde Windows bolsa tómendegi basqıshlar arqalı onı júklep alıwıńız múmkin:
+import AntivirusWarning from "../public/InstallingImages/antivirus-warning.png";
+import DoYouWantToInstallWindow from "../public/InstallingImages/do-you-want-install.png";
+import InstallationCompleteWindow from "../public/InstallingImages/installation-complete.png";
+import InstalledKeyboardWindow from "../public/InstallingImages/installed-keyboard.png";
 
 1. [`Júklemeler`](/downloads) bólimindegi latın hám kirill álipbesi ushın arnalǵan fayllardan ózińizge keregin júklep alıń.
-2. Fayl júklep alınǵannan keyin ol turǵan papkanı ashıń. Ádette, ol **Загрузки** papkasında jaylasqan boladı:
+
+   > Bul fayllar ózin-ózi iske túsiriwshi bolǵanı ushın hámde olardı ele az sandaǵı paydalanıwshılar kóshirip alǵanı ushın, brauzerlar virus bolıwı múmkin dep eskertedi. **Biraq, bularda virus joq!**
+
+   Bunday jaǵdayda, tómendegi súwrettegidey etip, kóshirip alsańız boladı:
+
+   {" "}
 
    <Image
-     src={FileInDownloads}
-     alt="File in downloads"
-     width={1000}
-     height={800}
+     src={AntivirusWarning}
+     alt="Antivirus warning"
+     width={500}
+     height={300}
    />
 
-3. Júklengen zip fayl ústine **мышка** alıp barıp, onıń oń tárepin basıń. Hám shıqqan aynadan **Извлечь все...** túymesin basıń:
+2. Kóshirip alǵan faylıńızdı iske túsiriń.
 
-   <Image src={ExtractAll} alt="Extract all" width={1000} height={800} />
-
-4. Payda bolǵan aynadan **Извлечь** túymesin basıń:
-
-   <Image src={Extract} alt="Extract" width={1000} height={800} />
-
-5. Túyme basılıp, azǵana waqıt ótkennen soń avtomatik túrde zip fayldıń atınday papka ashılıwı kerek. Eger ashılmasa, sol jerden ózińiz saylap ashıp alsańız boladı:
-
-   <Image src={Extracted} alt="Extracted" width={1000} height={800} />
-   Контроль учетных записей
-
-6. Sol papkanı ashın hám kórinip turǵan fayllar ishinen **setup** atlı fayldı tabıń, hám onı ashıń:
-
-   <Image src={SetupFile} alt="Setup file" width={1000} height={800} />
-
-7. **Контроль учетных записей** degen ayna ashıladı, ol jerde ápiwayı ǵana **Да**nı saylań.
-8. Eger ornatıw sátli tawsılǵan bolsa tómendegidey ayna shıgıwı kerek:
+   Tómendegidey aynada “Да” dep, juwap qaytarıń:
 
    <Image
-     src={InstallationComplete}
-     alt="Installation complete"
-     width={1000}
-     height={800}
+     src={DoYouWantToInstallWindow}
+     alt="Do you want to install?"
+     width={500}
+     height={300}
    />
 
-9. Jáne bir márte tekseriw ushın, ekranıńızdıń oń tárepki, tómen bóliminen klaviatura tilin ózgertiw bólimin ashıń. Ol jerde tómendegidey nárseler kóriniwi kerek:
+   Durıs ornatılsa, tómendegidey xabar beredi:
 
    <Image
-     src={CheckingLanguageExist}
-     alt="Checking language exist"
-     width={1000}
-     height={800}
+     src={InstallationCompleteWindow}
+     alt="Successfully installed"
+     width={500}
+     height={300}
    />
 
-10. Klaviatura ornatıldı, endi paydalanıwdı baslaw ushın usı siltemege basıń: [`/use`](/use)
+3. Boldı!
+
+Birdey maketler ekew bolmawı ushın, qáleseńiz, kompyuterińizde aldınnan bolǵan “**Русский**” yamasa “**Английский**” degen maketlerdi óshirip taslasańızda boladı.
+
+> Bazı bir Windows-larda kompyuterdi óshirip jaqpasa, jańa ornatılǵan maketler kórinbewi múmkin.
+> **Sonıń ushın hár itimalǵa qarsı, kompyuterińizdi óshirip-jaǵıwdı másláhat beremiz.**
+
+Kórinisi tómendegidey boladı:
+
+<Image
+  src={InstalledKeyboardWindow}
+  alt="Installed Keyboard"
+  width={500}
+  height={300}
+/>
+
+Endi paydalanıwdı baslaw ushın [`Paydalanıw`](/use/windows) betine ótiń.
+
+Bul materialdıń original avtorı: [`jiemurat`](https://jiemurat.github.io/QQ-kbd/), hám bul saytta ol azǵana ózgertildi.
+{console.log("Ráxmet jiemurat aǵa:)")}

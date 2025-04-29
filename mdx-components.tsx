@@ -55,7 +55,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         style={{
           borderLeft: "4px solid #ccc",
           paddingLeft: "1rem",
-          color: "#555",
+          color: "#ffffff",
           margin: "1rem 0",
           fontStyle: "italic"
         }}

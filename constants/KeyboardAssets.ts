@@ -7,12 +7,12 @@ export const KEYBOARD_ASSETS: Asset[] = [
       {
         type: "download",
         charset: "latin",
-        url: "/download_assets/windows/qq-lat.zip"
+        url: "/download_assets/windows/qq-lat.exe"
       },
       {
         type: "download",
         charset: "cyrillic",
-        url: "/download_assets/windows/qq-cyr.zip"
+        url: "/download_assets/windows/qq-cyr.exe"
       },
       {
         type: "install_instructions",
