@@ -62,7 +62,7 @@ const Navbar = () => {
           <div className="flex flex-1 items-center">
             <div className="flex shrink-0 items-center bg-black py-2.5 px-2 rounded-md">
               <Link href="/">
-                <span>KK Keyboards</span>
+                <span>Qarakey</span>
               </Link>
             </div>
             <div className="hidden custom-md:block sm:ml-6 bg-black py-2.5 px-2 rounded-md">

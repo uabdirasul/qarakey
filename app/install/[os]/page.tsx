@@ -2,12 +2,40 @@ import MdxLayout from "@/components/MdxLayout";
 import LinuxInstall from "@/markdown/LinuxInstall.mdx";
 import MacInstall from "@/markdown/MacInstall.mdx";
 import WindowsInstall from "@/markdown/WindowsInstall.mdx";
+import { Metadata } from "next";
 
-// Define the type according to the error message structure
 interface PageParams {
   params: Promise<{
     os: string;
   }>;
+}
+
+const metadataMap: Record<string, Metadata> = {
+  windows: {
+    title: "Windows klaviatura maketin ornatıw",
+    description: "Qaraqalpaq klaviatura maketin Windows ushın ornatıw"
+  },
+  linux: {
+    title: "Linux klaviatura maketin ornatıw",
+    description: "Qaraqalpaq klaviatura maketin Linux ushın ornatıw"
+  },
+  mac: {
+    title: "Mac klaviatura maketin ornatıw",
+    description: "Qaraqalpaq klaviatura maketin Mac ushın ornatıw"
+  }
+};
+
+export async function generateMetadata({
+  params
+}: PageParams): Promise<Metadata> {
+  const { os } = await params;
+
+  return (
+    metadataMap[os.toLowerCase()] || {
+      title: "Klaviatura ornatıw",
+      description: "Qaraqalpaqsha klaviatura maketin ornatıw instrukciyası"
+    }
+  );
 }
 
 const OS = ["windows", "linux", "mac"];

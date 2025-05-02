@@ -2,11 +2,40 @@ import MdxLayout from "@/components/MdxLayout";
 import LinuxUse from "@/markdown/LinuxUse.mdx";
 import MacUse from "@/markdown/MacUse.mdx";
 import WindowsUse from "@/markdown/WindowsUse.mdx";
+import { Metadata } from "next";
 
 interface PageParams {
   params: Promise<{
     os: string;
   }>;
+}
+
+const metadataMap: Record<string, Metadata> = {
+  windows: {
+    title: "Windows klaviatura maketinen paydalanıw",
+    description: "Qaraqalpaq klaviatura maketin Windowsta paydalanı"
+  },
+  linux: {
+    title: "Linux klaviatura maketinen paydalanıw",
+    description: "Qaraqalpaq klaviatura maketin Linuxta paydalanıw"
+  },
+  mac: {
+    title: "Mac klaviatura maketinen paydalanıw",
+    description: "Qaraqalpaq klaviatura maketin Macta paydalanıw"
+  }
+};
+
+export async function generateMetadata({
+  params
+}: PageParams): Promise<Metadata> {
+  const { os } = await params;
+
+  return (
+    metadataMap[os.toLowerCase()] || {
+      title: "Klaviatura ornatıw",
+      description: "Qaraqalpaqsha klaviatura maketin ornatıw instrukciyası"
+    }
+  );
 }
 
 export const dynamicParams = false;
