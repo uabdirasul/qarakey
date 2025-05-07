@@ -1,0 +1,85 @@
+import Image from "next/image";
+import MacKeyboard from "../public/UsingImages/mac-keyboard.png";
+
+### Latın álipbesi
+
+Háriplerdiń jaylasıwı standart latın klaviaturaǵa tiykarlanǵan, qosımsha háriplerdi shıǵarıw ushın `Option` (Alt) knopkasın basıp turıw arqalı erisiledi. Yaǵnıy `á` háribin shıǵarıw ushın `Option` kopkanı uslap turıp `a` knopkasın basasız:
+
+<div className="overflow-x-auto">
+  <table className="min-w-full border-collapse">
+    <thead>
+      <tr className="bg-gray-100">
+        <th className="border border-gray-300 px-4 py-2 text-left">Hárip</th>
+        <th className="border border-gray-300 px-4 py-2 text-left">
+          Kombinaciya
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        ["á", "Option + a"],
+        ["ı", "Option + i"],
+        ["ǵ", "Option + g"],
+        ["ń", "Option + n"],
+        ["ó", "Option + o"],
+        ["ú", "Option + u"]
+      ].map(([char, combo], index) => (
+        <tr key={char} className={index % 2 === 1 ? "bg-gray-50" : ""}>
+          <td className="border border-gray-300 px-4 py-2 font-bold">{char}</td>
+          <td className="border border-gray-300 px-4 py-2 font-bold">
+            {combo}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+### Kirill álipbesi
+
+Kirill álipbesine tiykarlanǵan klaviatura standart orıs tiline tiykarlanǵan klaviaturadan ózgeshe. Yaǵnıy, bul jerdegi kirill klaviaturası latın álipbesiniń transliteraciya qılınǵan variantı desekte boladı. Bul degeni, standart latın klaviatura joqarǵı qatarı QWERTY dep baslansa, kirillshe klaviatura hám ҚЎЕРТЙ dep baslanadı:
+
+<Image width={588} height={226} src={MacKeyboard} alt="Mac Keyboard" />
+
+Qosımsha háriplerdi qosıw kombinaciyası:
+
+<div className="overflow-x-auto">
+  <table className="min-w-full border-collapse">
+    <thead>
+      <tr className="bg-gray-100">
+        <th className="border border-gray-300 px-4 py-2 text-left">Hárip</th>
+        <th className="border border-gray-300 px-4 py-2 text-left">
+          Kombinaciya
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        ["ә", "Option + а"],
+        ["ы", "Option + и"],
+        ["ғ", "Option + г"],
+        ["ң", "Option + н"],
+        ["ө", "Option + о"],
+        ["ү", "Option + у"],
+        ["ш", "Option + с"],
+        ["щ", "Option + ҳ"],
+        ["ч", "Option + ц"],
+        ["э", "Option + е"],
+        ["ю", "Option + ў"],
+        ["я", "Option + й"],
+        ["ь", "Option + ,"],
+        ["ъ", "Option + ."]
+      ].map(([char, combo], index) => (
+        <tr key={char} className={index % 2 === 1 ? "bg-gray-50" : ""}>
+          <td className="border border-gray-300 px-4 py-2 font-bold">{char}</td>
+          <td className="border border-gray-300 px-4 py-2 font-bold">
+            {combo}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+Bul materialdıń original avtorı: [`shagalalab`](https://github.com/shagalalab/qqkeyboard-mac), hám bul saytta ol azǵana ózgertildi.
+{console.log("Ráxmet shagalalab:)")}

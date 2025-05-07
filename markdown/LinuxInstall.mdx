@@ -1,0 +1,49 @@
+1. [`Júklemeler`](/downloads) bólimindegi latın hám kirill álipbesi ushın arnalǵan fayllardan ózińizge keregin júklep alıń.
+2. `/usr/share/X11/xkb/rules/evdev.xml` faylın ózgertiw ushın ashıń (ózińiz qálegen tekst editori arqalı, `sudo` menen ashıń).
+
+   - Faylda `<layoutList>` bóliminiń aqırına barıń (bunıń ushın `</layoutList>` dı izlep tabıń).
+   - Aqırǵı `</layout>` teginen keyin tómendegilerden birewin qosıń:
+
+   Latın álipbesi bolsa:
+
+   ```xml
+    <layout>
+      <configItem>
+       <name>kaa</name>
+       <shortDescription>kaa</shortDescription>
+       <description>Karakalpak (latin)</description>
+       <languageList>
+         <iso639Id>kaa</iso639Id>
+       </languageList>
+      </configItem>
+      <variantList />
+    </layout>
+   ```
+
+   Kirill álipbesi bolsa:
+
+   ```xml
+    <layout>
+      <configItem>
+       <name>kaa</name>
+       <shortDescription>kaa</shortDescription>
+       <description>Karakalpak (Cyrillic)</description>
+       <languageList>
+         <iso639Id>kaa</iso639Id>
+       </languageList>
+      </configItem>
+      <variantList />
+    </layout>
+   ```
+
+3. `/usr/share/X11/xkb/rules/evdev.xml` faylın saqlań.
+4. Ubuntu-dı óshirip-jaǵıń.
+5. Ubuntu-dıń sazlamalarinda `Input Sources` degen jerde **Karakalpak (latin)** yáki **Karakalpak (Cyrillic)** di qosıń.
+
+Áwmet!
+
+Ubuntudan basqa islewi test qılınǵan GNU/Linux distributivaları:
+Fedora 39, Arch
+
+Bul materialdıń original avtorı: [`jiemurat`](https://github.com/jiemurat/kaa-kbd-layout), hám bul saytta ol azǵana ózgertildi.
+{console.log("Ráxmet jiemurat aǵa:)")}

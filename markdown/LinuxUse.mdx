@@ -1,0 +1,77 @@
+import Image from "next/image";
+import RightAlt from "../public/UsingImages/right-alt-keyboard.jpg";
+
+Qaraqalpaqsha simvollar `Right (oń jaqtaǵı) Alt` klavishi járdeminde teriledi:
+
+<Image src={RightAlt} alt="Right Alt" width={1000} height={800} />
+
+#### Tómendegi simvollar qosılǵan:
+
+Latın:
+
+<div className="overflow-x-auto">
+  <table className="min-w-full border-collapse">
+    <thead>
+      <tr className="bg-gray-100">
+        <th className="border border-gray-300 px-4 py-2 text-left">Simvol</th>
+        <th className="border border-gray-300 px-4 py-2 text-left">
+          Klavish kombinaciyasi
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        ["ú", "Right Alt + u"],
+        ["ń", "Right Alt + n"],
+        ["ǵ", "Right Alt + g"],
+        ["á", "Right Alt + a"],
+        ["ó", "Right Alt + o"],
+        ["ı", "Right Alt + i"]
+      ].map(([char, combo], index) => (
+        <tr key={char} className={index % 2 === 1 ? "bg-gray-50" : ""}>
+          <td className="border border-gray-300 px-4 py-2 font-bold">{char}</td>
+          <td className="border border-gray-300 px-4 py-2 font-bold">
+            {combo}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+<br />
+
+Kirill:
+
+<div className="overflow-x-auto">
+  <table className="min-w-full border-collapse">
+    <thead>
+      <tr className="bg-gray-100">
+        <th className="border border-gray-300 px-4 py-2 text-left">Символ</th>
+        <th className="border border-gray-300 px-4 py-2 text-left">Шорткат</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        ["ў", "Right Alt + у"],
+        ["қ", "Right Alt + к"],
+        ["ң", "Right Alt + н"],
+        ["ғ", "Right Alt + г"],
+        ["ҳ", "Right Alt + х"],
+        ["ә", "Right Alt + а"],
+        ["ө", "Right Alt + о"],
+        ["ү", "Right Alt + и"]
+      ].map(([char, combo], index) => (
+        <tr key={char} className={index % 2 === 1 ? "bg-gray-50" : ""}>
+          <td className="border border-gray-300 px-4 py-2 font-bold">{char}</td>
+          <td className="border border-gray-300 px-4 py-2 font-bold">
+            {combo}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+Bul materialdıń original avtorı: [`jiemurat`](https://github.com/jiemurat/kaa-kbd-layout), hám bul saytta ol azǵana ózgertildi.
+{console.log("Ráxmet jiemurat aǵa:)")}
