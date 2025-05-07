@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import QarakeyLogo from "../public/qarakey-logo.png";
 import LargeDeviceLinks from "./LargeDeviceLinks";
 import SmallDeviceLinks from "./SmallDeviceLinks";
 
@@ -60,11 +62,21 @@ const Navbar = () => {
             </button>
           </div>
           <div className="flex flex-1 items-center">
-            <div className="flex shrink-0 items-center bg-black py-2.5 px-2 rounded-md">
-              <Link href="/">
-                <span>Qarakey</span>
+            <div className="flex shrink-0 items-center bg-black p-1.5 rounded-md">
+              <Link href="/" className="flex items-center space-x-2">
+                <Image
+                  className="bg-white rounded-full inline-block shadow-lg"
+                  src={QarakeyLogo}
+                  alt="Qarakey logo"
+                  width={36}
+                  height={36}
+                />
+                <span className="text-white font-semibold text-lg hover:text-yellow-400 transition duration-200">
+                  Qarakey
+                </span>
               </Link>
             </div>
+
             <div className="hidden custom-md:block sm:ml-6 bg-black py-2.5 px-2 rounded-md">
               <LargeDeviceLinks />
             </div>
